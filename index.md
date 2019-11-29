@@ -1,14 +1,22 @@
 ---
 title: Home
 banner:
-  title: This is Construct
-  subtitle: |-
-    Aliquam scelerisque rutrum nec donec lorem ipsum dolor sit amet  
-    porttitor ornare tempus dignissim felis magna commodo.
   show_scroll_button: true
+  subtitle: >-
+    Footprints is a digital agency that builds solutions for internal
+    development and efficient communication.
+
+
+    Our core service is to facilitate creativity and innovation through tools
+    and technology adapted to your business needs.
+  title: Footprints
 sections:
-  - type: icons
-    title: Dictum lorem feugiat
+  - component: icons.html
+    icons:
+      - icon: fa-coffee
+      - icon: fa-code
+      - icon: fa-cloud
+    section_id: one
     subtitle: >-
       Nam condimentum ullamcorper quam vitae dictum. Sed consectetur nulla
       lacus,  
@@ -17,72 +25,69 @@ sections:
       vestibulum  
 
       mauris, eu eleifend lorem ipsum dolor sit amet nullam consequat.
-    section_id: one
-    icons:
-      - icon: fa-coffee
-      - icon: fa-code
-      - icon: fa-cloud
-    component: icons.html
-  - type: highlights
-    title: Highlights Section
+    title: Dictum lorem feugiat
+    type: icons
+  - component: highlights.html
     section_id: two
-    component: highlights.html
-  - type: features
-    title: Commodo justo interdum
+    title: Highlights Section
+    type: highlights
+  - actions:
+      - is_primary: false
+        is_scrolly: false
+        label: Learn More
+        url: /elements
+    component: features.html
+    features:
+      - icon: fa-camera-retro
+        text: >-
+          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
+          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
+          tempus.
+        title: Facilisis tempus
+      - icon: fa-cog
+        text: >-
+          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
+          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
+          tempus.
+        title: Lectus magna
+      - icon: fa-diamond
+        text: >-
+          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
+          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
+          tempus.
+        title: Ipsum lorem
+      - icon: fa-floppy-o
+        text: >-
+          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
+          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
+          tempus.
+        title: Feugiat veroeros
+    section_id: three
     subtitle: >-
       Nam condimentum ullamcorper quam vitae dictum. Sed consectetur nulla
       lacus,  
 
       ultricies ornare lacus volutpat at. Nunc rutrum turpis ipsum.
-    section_id: three
-    features:
-      - title: Facilisis tempus
-        text: >-
-          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
-          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
-          tempus.
-        icon: fa-camera-retro
-      - title: Lectus magna
-        text: >-
-          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
-          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
-          tempus.
-        icon: fa-cog
-      - title: Ipsum lorem
-        text: >-
-          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
-          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
-          tempus.
-        icon: fa-diamond
-      - title: Feugiat veroeros
-        text: >-
-          Aliquet nisl, ac commodo neque est et dolor. Donec sed amet ornare,
-          justo non pulvinar interdum, neque justo auctor lectus, facilisis diam
-          tempus.
-        icon: fa-floppy-o
-    actions:
-      - label: Learn More
-        url: /elements
-        is_scrolly: false
-        is_primary: false
-    component: features.html
-  - type: spotlights
-    title: Spotlights Section
+    title: Commodo justo interdum
+    type: features
+  - component: spotlights.html
     section_id: four
-    component: spotlights.html
+    title: Spotlights Section
+    type: spotlights
 cta:
+  actions:
+    - is_primary: true
+      is_scrolly: false
+      label: Get Started
+      url: /generic
+  background_style: style1
   enabled: true
-  title: Amet magna tempus
   text: >-
     Ultricies ornare lacus volutpat at. Nunc rutrum turpis ipsum. Mauris at
     vestibulum  
 
     mauris, eu eleifend lorem ipsum dolor sit amet nullam consequat.
-  background_style: style1
-  actions:
-    - label: Get Started
-      url: /generic
-      is_scrolly: false
-      is_primary: true
+  title: Amet magna tempus
 layout: home
 ---
+
