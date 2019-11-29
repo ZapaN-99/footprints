@@ -1,0 +1,26 @@
+<!-- Features -->
+<section id="{{ include.section.section_id }}" class="special">
+    <header class="major">
+        <h2>{{ include.section.title }}</h2>
+        {{ include.section.subtitle | markdownify }}
+    </header>
+    <section class="features">
+        {% for feature in include.section.features %}
+            <section>
+                <span class="icon major {{ feature.icon }}"></span>
+                <h3>{{ feature.title }}</h3>
+                {{ feature.text | markdownify }}
+            </section>
+        {% endfor %}
+    </section>
+    {% assign actions_is_not_empty = include.section.actions | is_not_empty %}
+    {% if actions_is_not_empty %}
+        <footer class="major">
+            <ul class="actions special">
+                {% for action in include.section.actions %}
+                    <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}" class="button{% assign is_primary_is_not_empty = action.is_primary | is_not_empty %}{% if is_primary_is_not_empty %} primary{% endif %}{% assign is_scrolly_is_not_empty = action.is_scrolly | is_not_empty %}{% if is_scrolly_is_not_empty %} scrolly{% endif %}">{{ action.label }}</a></li>
+                {% endfor %}
+            </ul>
+        </footer>
+    {% endif %}
+</section>

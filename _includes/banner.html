@@ -1,0 +1,15 @@
+<!-- Banner -->
+<section id="banner">
+    <header class="major">
+        <h1>{{ page.banner.title }}</h1>
+        {{ page.banner.subtitle | markdownify }}
+    </header>
+    {% assign show_scroll_button_is_not_empty = page.banner.show_scroll_button | is_not_empty %}
+    {% if show_scroll_button_is_not_empty %}
+        <ul class="actions fixed special">
+            <li><a class="button large primary icon solo fa-angle-down scrolly" href="#main">
+                <span class="label">Learn More</span>
+                </a></li>
+        </ul>
+    {% endif %}
+</section>
